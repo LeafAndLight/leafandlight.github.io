@@ -1,83 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>I Have a Plan – Leaf and Light Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px;
-      line-height: 1.6;
-      background: #f5f5f8;
-    }
-    h1, h2 { color: #222; }
-    .hero {
-      margin-bottom: 24px;
-    }
-    .tag {
-      display: inline-block;
-      background: #ffe57f;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .card {
-      background: #ffffff;
-      padding: 18px 20px;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-      margin-bottom: 18px;
-    }
-    a { color: #0a7cff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer {
-      margin-top: 24px;
-      font-size: 13px;
-      color: #555;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leaf & Light Studio creates immersive VR games, prototypes and production-ready worlds for Meta Quest, Steam and other interactive platforms." />
+  <title>Leaf & Light Studio | VR Worlds, Games and Prototypes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=theme-switcher-20260629" />
+  <link rel="stylesheet" href="assets/css/vintage-arcade.css?v=20260629-switcher" />
+  <link rel="stylesheet" href="assets/css/vr-ai-tech.css?v=20260629" />
+  <link rel="stylesheet" href="assets/css/miami-art-deco.css?v=theme-switcher-20260629" />
 </head>
-<body>
-  <div class="hero card">
-    <span class="tag">VR game for Meta Quest 2 & 3</span>
-    <h1>I Have a Plan</h1>
-    <p><strong>I Have a Plan</strong> is a stylized VR climbing game where players climb an endless alien structure using hand-based locomotion, avoid traps, collect rewards and try to reach the highest point possible.</p>
-  </div>
+<body class="vr-ai-theme miami-deco-theme">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="https://www.linkedin.com/company/leaf-light-studio/" target="_blank" rel="noreferrer" aria-label="Open Leaf & Light Studio on LinkedIn">
+        <img src="assets/images/leaf_and_light_logo.png" alt="Leaf & Light Studio logo" />
+        <div class="brand-name">Leaf & Light Studio</div>
+      </a>
+      <div class="theme-switcher" aria-label="Choose site visual style">
+        <button type="button" class="theme-dot" data-theme="base" aria-label="Use base style" title="Base"></button>
+        <button type="button" class="theme-dot" data-theme="vr" aria-label="Use VR AI style" title="VR AI"></button>
+        <button type="button" class="theme-dot" data-theme="retro" aria-label="Use retro arcade style" title="Retro"></button>
+        <button type="button" class="theme-dot" data-theme="miami" aria-label="Use Miami Art Deco style" title="Miami Art Deco"></button>
+      </div>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#crew">Crew</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="card">
-    <h2>About the developer</h2>
-    <p><strong>Leaf and Light Studio</strong> is a solo independent studio focused on stylized, high-quality VR experiences for Meta Quest.</p>
-    <p>Contact: <a href="mailto:leafandlightstudio@gmail.com">leafandlightstudio@gmail.com</a></p>
-  </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg">
+      </div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow">Independent VR game development studio</div>
+          <h1>Immersive VR worlds, built from idea to final game.</h1>
+          <p>
+            Leaf & Light Studio is a small, efficient Brazil-based game development team creating stylized VR and PC experiences, from first idea to optimized store build.
+          </p>
+          <div class="hero-pills">
+            <span>VR first pipeline</span>
+            <span>Meta Quest focused</span>
+            <span>Prototype to release</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">Explore projects</a>
+            <a href="#contact" class="btn">Start a project</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="side-card">
+            <div class="label">What we do</div>
+            <strong>Full-cycle game development</strong>
+            <p>From concept and prototyping to content production, optimization and final delivery for immersive and stylized games.</p>
+          </div>
+          <div class="side-card">
+            <div class="label">Platforms</div>
+            <strong>VR, Steam and beyond</strong>
+            <p>Stylized worlds, readable interaction and practical performance for Meta Quest 2, Meta Quest 3, PC and future multiplatform releases.</p>
+          </div>
+          <div class="hero-cover-control" aria-label="Hero cover loop">
+            <span>Cover loop</span>
+            <div class="slide-dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Platform & features</h2>
-    <ul>
-      <li>Platform: Meta Quest 2 & Meta Quest 3</li>
-      <li>Mode: Single-player, offline gameplay with optional online services</li>
-      <li>Online services:
-        <ul>
-          <li>Meta in-app purchases (add-ons, e.g. “Golden Key”)</li>
-          <li>Meta cloud saves (if enabled)</li>
-          <li>Meta leaderboards (online rankings, planned)</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow section-index">01 / Projects</div>
+          <div>
+            <h2>Games we have created and worlds we are building.</h2>
+            <p>
+              A focused look at released and in-development VR games for Meta Quest, built around readable gameplay, strong visual identity and practical production scope.
+            </p>
+          </div>
+        </div>
 
-  <div class="card">
-    <h2>Links</h2>
-    <ul>
-      <li>Privacy Policy: <a href="https://leafandlight.github.io/infinity-game-privacy/">I Have a Plan Privacy Policy</a></li>
-    </ul>
-  </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/car_crash_showcase_combat.jpg" alt="Car Crash Arena" />
+              <div class="project-theme">
+                <div class="project-dot project-dot--car">
+                  <img src="assets/icons/car-crash-icon.png" alt="" aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <div class="project-title">
+                  <h3>Car Crash Arena</h3>
+                  <span class="project-kicker">VR vehicle combat arena</span>
+                </div>
+              </div>
+              <img class="project-mark" src="assets/images/car_crash_project_banner.png" alt="Car Crash Arena project banner" />
+              <p>
+                A chaotic VR vehicle combat arena where players survive five waves, customize car combat modules and smash through mutants, zombies and wild enemies while an overexcited announcer celebrates the destruction.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Single Player</span>
+                <span class="tag">Meta Quest</span>
+                <span class="tag">Arena Survival</span>
+                <span class="tag">Vehicle Combat</span>
+                <span class="tag">Car Destruction</span>
+              </div>
+              <div class="store-cta-row">
+                <a class="store-link store-link--meta" href="https://www.meta.com/experiences/car-crash-arena/26991548930529478/" target="_blank" rel="noreferrer" aria-label="Open Car Crash Arena Meta Store page" title="Open on Meta Store">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c2.2-4.3 4.8-6.5 7.5-6.5 1.7 0 3 1.1 4.2 3.1 1.1 1.8 2 3 3.3 3 1.1 0 1.8-.8 2.5-1.8v3.1c-.8.9-1.6 1.6-2.8 1.6-2 0-3.1-1.6-4.2-3.4-1-1.7-1.7-2.7-2.9-2.7-1.6 0-3.5 1.8-5.3 5.3-.7 1.4-1.5 2.4-2.9 2.4-1.7 0-2.7-1.6-2.7-4.1 0-2.6 1.1-4 3.3-4 1.6 0 2.7 1 4 3.1l.4.6-.9 1.3-.6-1C6.4 10.2 5.5 9.5 4.6 9.5c-.8 0-1.3.9-1.3 2.5 0 1.3.4 2.1 1.1 2.1.6 0 .9-.5 1.1-1.1z" fill="currentColor"/></svg>
+                  <span>View game on Meta</span>
+                </a>
+              </div>
+              <div class="project-video project-video--car">
+                <div class="video-bar"></div>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube-nocookie.com/embed/zTKtXHv1lbI?rel=0&playsinline=1"
+                    title="Car Crash Arena trailer"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
 
-  <div class="footer">
-    <p>© 2025 Leaf and Light Studio. I Have a Plan is currently in development for Meta Quest 2 and Quest 3.</p>
-  </div>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/im_prisoner_03.png" alt="I'm Prisoner" />
+              <div class="project-theme">
+                <div class="project-dot project-dot--prison">
+                  <img src="assets/icons/im-prisoner-icon.png" alt="" aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <div class="project-title">
+                  <h3>I'm Prisoner</h3>
+                  <span class="project-kicker">Co-op VR prison escape</span>
+                </div>
+              </div>
+              <img class="project-mark" src="assets/images/im_prisoner_project_banner.png" alt="I'm Prisoner project banner" />
+              <p>
+                A VR prison escape game set inside a maximum-security facility, with guards, turrets, weapons, character upgrades and specific escape routes that challenge players to break out alive.
+              </p>
+              <div class="tag-row">
+                <span class="tag">1-6 Players</span>
+                <span class="tag">Meta Quest</span>
+                <span class="tag">Co-op Escape</span>
+                <span class="tag">Security Prison</span>
+                <span class="tag">Escape Routes</span>
+              </div>
+              <div class="store-cta-row">
+                <a class="store-link store-link--meta" href="https://www.meta.com/experiences/game-im-prisoner/25657930913826702/" target="_blank" rel="noreferrer" aria-label="Open I'm Prisoner Meta Store page" title="Open on Meta Store">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c2.2-4.3 4.8-6.5 7.5-6.5 1.7 0 3 1.1 4.2 3.1 1.1 1.8 2 3 3.3 3 1.1 0 1.8-.8 2.5-1.8v3.1c-.8.9-1.6 1.6-2.8 1.6-2 0-3.1-1.6-4.2-3.4-1-1.7-1.7-2.7-2.9-2.7-1.6 0-3.5 1.8-5.3 5.3-.7 1.4-1.5 2.4-2.9 2.4-1.7 0-2.7-1.6-2.7-4.1 0-2.6 1.1-4 3.3-4 1.6 0 2.7 1 4 3.1l.4.6-.9 1.3-.6-1C6.4 10.2 5.5 9.5 4.6 9.5c-.8 0-1.3.9-1.3 2.5 0 1.3.4 2.1 1.1 2.1.6 0 .9-.5 1.1-1.1z" fill="currentColor"/></svg>
+                  <span>View game on Meta</span>
+                </a>
+              </div>
+              <div class="project-video project-video--prison">
+                <div class="video-bar"></div>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube-nocookie.com/embed/jClY-se4Meo?rel=0&playsinline=1"
+                    title="I'm Prisoner trailer"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/infinity_climb_02.png" alt="Infinity Climb" />
+              <div class="project-theme">
+                <div class="project-dot project-dot--climb">
+                  <img src="assets/icons/infinity-climb-icon.png" alt="" aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <div class="project-title">
+                  <h3>Infinity Climb</h3>
+                  <span class="project-kicker">Endless VR climbing adventure</span>
+                </div>
+              </div>
+              <img class="project-mark" src="assets/images/infinity_climb_cover.png" alt="Infinity Climb project banner" />
+              <p>
+                An endless VR climbing game where players ascend a surreal alien structure, overcome route challenges, reach safe points and collect rewards through hand-based locomotion.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Single Player</span>
+                <span class="tag">Meta Quest</span>
+                <span class="tag">VR Platformer</span>
+                <span class="tag">Hand Locomotion</span>
+                <span class="tag">Safe Points</span>
+              </div>
+              <div class="store-cta-row">
+                <a class="store-link store-link--meta" href="https://www.meta.com/experiences/game-infinity-climb/32367249162920119/" target="_blank" rel="noreferrer" aria-label="Open Infinity Climb Meta Store page" title="Open on Meta Store">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c2.2-4.3 4.8-6.5 7.5-6.5 1.7 0 3 1.1 4.2 3.1 1.1 1.8 2 3 3.3 3 1.1 0 1.8-.8 2.5-1.8v3.1c-.8.9-1.6 1.6-2.8 1.6-2 0-3.1-1.6-4.2-3.4-1-1.7-1.7-2.7-2.9-2.7-1.6 0-3.5 1.8-5.3 5.3-.7 1.4-1.5 2.4-2.9 2.4-1.7 0-2.7-1.6-2.7-4.1 0-2.6 1.1-4 3.3-4 1.6 0 2.7 1 4 3.1l.4.6-.9 1.3-.6-1C6.4 10.2 5.5 9.5 4.6 9.5c-.8 0-1.3.9-1.3 2.5 0 1.3.4 2.1 1.1 2.1.6 0 .9-.5 1.1-1.1z" fill="currentColor"/></svg>
+                  <span>View game on Meta</span>
+                </a>
+              </div>
+              <div class="project-video project-video--climb">
+                <div class="video-bar"></div>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube-nocookie.com/embed/mJ9uwHqM4RM?rel=0&playsinline=1"
+                    title="Infinity Climb trailer"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow section-index">02 / Services</div>
+          <div>
+            <h2>Professional production, simple process.</h2>
+            <p>
+              Bring us an idea, an early prototype or a project already in progress. We help shape the direction and carry the work to a stable final build.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-grid service-pillars" role="group" aria-label="Select a service for the contact form">
+          <button class="service-card service-card--pillar service-select-card service-select-card--orange" type="button" data-service="Full-Cycle Game Development" aria-pressed="false">
+            <div class="service-icon service-orange">◎</div>
+            <div class="service-number">01</div>
+            <h3>Full-Cycle Game Development</h3>
+            <p>Creative direction, systems, art production, implementation, testing, optimization and final store-ready delivery.</p>
+            <span class="service-selected-note" aria-hidden="true">Selected</span>
+          </button>
+          <button class="service-card service-card--pillar service-select-card service-select-card--blue" type="button" data-service="VR Worlds and Experiences" aria-pressed="false">
+            <div class="service-icon service-blue">◉</div>
+            <div class="service-number">02</div>
+            <h3>VR Worlds and Experiences</h3>
+            <p>Immersive VR worlds built around presence, comfort, readable interaction and practical performance for headsets.</p>
+            <span class="service-selected-note" aria-hidden="true">Selected</span>
+          </button>
+          <button class="service-card service-card--pillar service-select-card service-select-card--purple" type="button" data-service="Concepts and Prototypes" aria-pressed="false">
+            <div class="service-icon service-purple">✦</div>
+            <div class="service-number">03</div>
+            <h3>Concepts and Prototypes</h3>
+            <p>Playable prototypes that test the core loop early, clarify scope and shape a stronger production path.</p>
+            <span class="service-selected-note" aria-hidden="true">Selected</span>
+          </button>
+        </div>
+
+        <div class="process-wrap flow-wrap">
+          <div class="eyebrow">Creation flow</div>
+          <div class="process-flow">
+            <div class="flow-step"><span>01</span><strong>Discover</strong><p>Idea, audience, visual tone and production goals become a clear direction.</p></div>
+            <div class="flow-step"><span>02</span><strong>Prototype</strong><p>The core loop is tested quickly so the strongest experience can surface early.</p></div>
+            <div class="flow-step"><span>03</span><strong>Build</strong><p>Systems, worlds, art and interactions are produced as one connected game pipeline.</p></div>
+            <div class="flow-step flow-step--final"><span>04</span><strong>Deliver</strong><p>Optimization, polish and release preparation turn the flow into a final playable product.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-we-work">
+      <div class="container approach">
+        <div class="approach-copy">
+          <div class="eyebrow section-index">03 / How we work</div>
+          <h2>A focused core. The right specialists for every world.</h2>
+          <p>
+            Our Brazil-based core crew leads each project from creative direction to delivery, keeping the vision, production and technical decisions connected.
+          </p>
+          <p>
+            When a project calls for a specific discipline, we bring in trusted specialists from our professional network across LinkedIn and ArtStation, matching the right talent to the style and challenge of the game.
+          </p>
+          <div class="approach-pills">
+            <span>VR Games</span>
+            <span>Steam Games</span>
+            <span>Multiplayer</span>
+            <span>Co-op</span>
+            <span>Solo Play</span>
+          </div>
+        </div>
+        <div class="approach-visual" aria-label="Core crew connected to selected specialists on demand">
+          <div class="talent-orbit orbit-outer" aria-hidden="true">
+            <span class="orbit-node" data-angle="0.785" data-speed="0.998">3D Artist</span>
+            <span class="orbit-node" data-angle="2.356" data-speed="1.002" data-mobile-secondary>Environment Artist</span>
+            <span class="orbit-node" data-angle="3.927" data-speed="0.997" data-mobile-secondary>Concept Artist</span>
+            <span class="orbit-node" data-angle="5.498" data-speed="1.003">Sound Designer</span>
+          </div>
+          <div class="talent-orbit orbit-middle" aria-hidden="true">
+            <span class="orbit-node" data-angle="5.8" data-speed="1.001" data-mobile-secondary>QA</span>
+            <span class="orbit-node" data-angle="1.5" data-speed="0.998">Developer</span>
+            <span class="orbit-node" data-angle="3.6" data-speed="1.002">Level Designer</span>
+          </div>
+          <div class="talent-orbit orbit-inner" aria-hidden="true">
+            <span class="orbit-node" data-angle="0" data-speed="0.999" data-mobile-secondary>Lighting Artist</span>
+            <span class="orbit-node" data-angle="2.8" data-speed="1.001">Programmer</span>
+          </div>
+          <div class="core-node">
+            <strong>Leaf &amp; Light Core</strong>
+          </div>
+          <div class="orbit-caption"><span></span> Selected talent, connected on demand</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="crew">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow section-index">04 / Crew</div>
+          <div>
+            <h2>The people behind the work.</h2>
+            <p>Creative and technical talent shaping every project from concept to release.</p>
+          </div>
+        </div>
+
+        <div class="leadership-grid">
+          <article class="leader-card leader-main">
+            <a class="leader-photo-link" href="https://www.linkedin.com/in/eduardo-jaeger-3a2549112/" target="_blank" rel="noreferrer" aria-label="Open Eduardo Jaeger's LinkedIn profile">
+              <span class="leader-photo-wrap">
+                <img class="leader-photo" src="assets/images/eduardo-jaeger.jpg" alt="Portrait of Eduardo Jaeger" />
+                <img class="country-flag" src="assets/images/brazil-flag.png" alt="Brazil" />
+                <span class="photo-link-hint" aria-hidden="true">in</span>
+              </span>
+            </a>
+            <div class="leader-copy">
+              <div class="eyebrow">Founder and CEO</div>
+              <h3>Eduardo Jaeger</h3>
+              <p>
+                Eduardo leads the studio's creative direction, production strategy and hands-on development across its VR projects, from early concept work and world building to playable releases.
+              </p>
+              <div class="leader-tags">
+                <span>Creative Direction</span>
+                <span>VR Development</span>
+                <span>Environment Art</span>
+                <span>Production</span>
+              </div>
+              <div class="leader-actions">
+                <a class="btn primary small" href="https://www.linkedin.com/in/eduardo-jaeger-3a2549112/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="btn primary small" href="https://www.artstation.com/eduardojaeger" target="_blank" rel="noreferrer">ArtStation</a>
+              </div>
+              <div class="crew-work-grid" aria-label="Selected work by Eduardo Jaeger">
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open urban environment artwork"><img src="assets/images/crew/eduardo/urban-environment.jpg" alt="Stylized urban environment with brick buildings and foliage" /></button><figcaption><span>Environment Art</span><strong>Urban study</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open modular building artwork"><img src="assets/images/crew/eduardo/modular-buildings.jpg" alt="Modular stylized apartment building models" /></button><figcaption><span>3D Art</span><strong>Modular kit</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open care robot artwork"><img src="assets/images/crew/eduardo/care-robot.jpg" alt="Stylized care robot character" /></button><figcaption><span>Character Art</span><strong>Care robot</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open science fiction weapon artwork"><img src="assets/images/crew/eduardo/sci-fi-weapon.jpg" alt="Detailed science fiction weapon model" /></button><figcaption><span>Hard Surface</span><strong>GEIND EL-528</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open park environment artwork"><img src="assets/images/crew/eduardo/park-environment.jpg" alt="Stylized park and castle environment" /></button><figcaption><span>World Building</span><strong>Park scene</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open robot character artwork"><img src="assets/images/crew/eduardo/character-robot.jpg" alt="Stylized robot character carrying a weapon" /></button><figcaption><span>Character Art</span><strong>Unit concept</strong></figcaption></figure>
+                <figure class="crew-work-item"><button class="portfolio-open" type="button" aria-label="Open fire hydrant artwork"><img src="assets/images/crew/eduardo/fire-hydrant.jpg" alt="Detailed fire hydrant material study" /></button><figcaption><span>Prop Art</span><strong>Material study</strong></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <div class="leader-side-stack">
+            <article class="info-card">
+              <div class="label">Skills and tools</div>
+              <h3>Main qualifications</h3>
+              <p>Explore some of the skills, tools and areas of expertise behind this profile.</p>
+              <div class="skill-groups">
+                <div class="skill-group">
+                  <strong>Engines</strong>
+                  <div class="skill-list">
+                    <span>Unity</span><span>Unreal Engine</span><span>C# Gameplay Scripting</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <strong>Art Pipeline</strong>
+                  <div class="skill-list">
+                    <span>Blender</span><span>ZBrush</span><span>Substance Painter</span><span>Substance Designer</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <strong>Focus</strong>
+                  <div class="skill-list">
+                    <span>VR Production</span><span>Meta Quest</span><span>Steam</span><span>World Building</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container portfolio-shell">
+        <div class="section-head">
+          <div class="eyebrow section-index">05 / Portfolio</div>
+          <div>
+            <h2>Shots, spaces and gameplay moments.</h2>
+            <p>An interactive selection of worlds, atmosphere and production direction across the studio. Move through the work to reveal each project's character.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-grid cinematic-grid" id="portfolioGrid">
+          <div class="portfolio-chapter"><span>Featured project</span><strong>Car Crash Arena</strong></div>
+
+          <figure class="shot cinema-shot cinema-feature portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open The arena awakens image"><img src="assets/images/car_crash_showcase_arena.jpg" alt="Car Crash Arena panoramic arena view" /></button>
+            <figcaption><span>Arena overview</span><strong>The arena awakens</strong></figcaption>
+          </figure>
+
+          <figure class="shot cinema-shot cinema-wide portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Colossus run image"><img src="assets/images/car_crash_showcase_colossus.jpg" alt="Car Crash Arena vehicle beneath the arena colossus" /></button>
+            <figcaption><span>Vehicle combat</span><strong>Colossus run</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-side portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Bone tunnel image"><img src="assets/images/car_crash_showcase_tunnel.jpg" alt="Car Crash Arena car driving through the bone tunnel" /></button>
+            <figcaption><span>Arena route</span><strong>Bone tunnel</strong></figcaption>
+          </figure>
+
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Combat overview image"><img src="assets/images/car_crash_showcase_combat.jpg" alt="Car Crash Arena open combat overview" /></button>
+            <figcaption><span>Survival arena</span><strong>Combat overview</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Arena chaos image"><img src="assets/images/car_crash_showcase_chaos.jpg" alt="Car Crash Arena enemies and vehicles during a wave" /></button>
+            <figcaption><span>Wave survival</span><strong>Arena chaos</strong></figcaption>
+          </figure>
+
+          <figure class="shot cinema-shot cinema-side portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Toxic drive image"><img src="assets/images/car_crash_showcase_drive.jpg" alt="Car Crash Arena vehicle crossing the toxic arena" /></button>
+            <figcaption><span>Combat route</span><strong>Toxic drive</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-wide portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Giant encounter image"><img src="assets/images/car_crash_showcase_giant.jpg" alt="Car Crash Arena giant encounter" /></button>
+            <figcaption><span>Arena threat</span><strong>Giant encounter</strong></figcaption>
+          </figure>
+
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Ramp pursuit image"><img src="assets/images/car_crash_showcase_ramp.jpg" alt="Car Crash Arena ramp pursuit" /></button>
+            <figcaption><span>High-speed route</span><strong>Ramp pursuit</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Car Crash Arena">
+            <button class="portfolio-open" type="button" aria-label="Open Bone gauntlet image"><img src="assets/images/car_crash_showcase_gauntlet.jpg" alt="Car Crash Arena car escaping the bone gauntlet" /></button>
+            <figcaption><span>Escape route</span><strong>Bone gauntlet</strong></figcaption>
+          </figure>
+
+          <div class="portfolio-chapter portfolio-chapter--secondary portfolio-chapter--prison"><span>Project gallery</span><strong>I'm Prisoner</strong></div>
+
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="I'm Prisoner">
+            <button class="portfolio-open" type="button" aria-label="Open I'm Prisoner image"><img src="assets/images/im_prisoner_01.jpg" alt="I'm Prisoner character screen" /></button>
+            <figcaption><span>Prison escape</span><strong>I'm Prisoner</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="I'm Prisoner">
+            <button class="portfolio-open" type="button" aria-label="Open Readable VR spaces image"><img src="assets/images/im_prisoner_02.jpg" alt="I'm Prisoner control room" /></button>
+            <figcaption><span>Interaction design</span><strong>Readable VR spaces</strong></figcaption>
+          </figure>
+
+          <div class="portfolio-chapter portfolio-chapter--secondary portfolio-chapter--climb"><span>Project gallery</span><strong>Infinity Climb</strong></div>
+
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Infinity Climb">
+            <button class="portfolio-open" type="button" aria-label="Open Infinity Climb image"><img src="assets/images/infinity_climb_03.png" alt="Infinity Climb" /></button>
+            <figcaption><span>Infinite ascent</span><strong>Infinity Climb</strong></figcaption>
+          </figure>
+          <figure class="shot cinema-shot cinema-half portfolio-reveal" data-project="Infinity Climb">
+            <button class="portfolio-open" type="button" aria-label="Open Bright game feel image"><img src="assets/images/infinity_climb_05.png" alt="Infinity Climb tower" /></button>
+            <figcaption><span>Visual direction</span><strong>Bright game feel</strong></figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolioLightbox" role="dialog" aria-modal="true" aria-label="Expanded portfolio image" aria-hidden="true">
+          <button class="lightbox-close" type="button" aria-label="Close expanded image">&times;</button>
+          <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&#8249;</button>
+          <figure class="lightbox-figure">
+            <img id="lightboxImage" src="" alt="" />
+            <figcaption><span id="lightboxLabel"></span><strong id="lightboxTitle"></strong></figcaption>
+          </figure>
+          <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#8250;</button>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card" id="contactCard">
+          <div class="contact-plane-bg" aria-hidden="true">
+            <div class="contact-orb orb-one"></div>
+            <div class="contact-orb orb-two"></div>
+            <div class="contact-orb orb-three"></div>
+            <div class="plane-flight" id="planeFlight">
+              <svg viewBox="0 0 180 120" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                <defs>
+                  <linearGradient id="planeGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="100%" stop-color="#dbe8ff"/>
+                  </linearGradient>
+                </defs>
+                <path d="M11 60L167 10L115 60L167 110L11 60Z" fill="url(#planeGrad)" opacity="0.95"/>
+                <path d="M24 60H117" stroke="#8ea7ff" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-copy-block">
+              <div class="eyebrow contact-eyebrow section-index">06 / Contact</div>
+              <h2>Have an idea, a project or a game already in motion?</h2>
+              <p>
+                We can help shape the concept, build the prototype, continue an existing project or take development all the way to the final build.
+                Contact us for more information.
+              </p>
+
+              <div class="contact-quick-actions">
+                <a class="contact-email" href="mailto:leafandlightcontac@gmail.com">
+                  <span class="gmail-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2 .3v10.2c0 .41.34.75.75.75H7V9.48l5 3.9 5-3.9V18h1.25c.41 0 .75-.34.75-.75V7.05l-6.54 5.1a.75.75 0 0 1-.92 0L5 7.05Z" fill="currentColor"/></svg>
+                  </span>
+                  <span>leafandlightcontac@gmail.com</span>
+                </a>
+                <button class="copy-icon-btn" type="button" id="copyEmailBtn" aria-label="Copy email address" title="Copy email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9.75A2.75 2.75 0 0 1 11.75 7h7.5A2.75 2.75 0 0 1 22 9.75v7.5A2.75 2.75 0 0 1 19.25 20h-7.5A2.75 2.75 0 0 1 9 17.25v-7.5Zm2.75-1.25c-.69 0-1.25.56-1.25 1.25v7.5c0 .69.56 1.25 1.25 1.25h7.5c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25h-7.5ZM2 6.75A2.75 2.75 0 0 1 4.75 4h8.5v1.5h-8.5c-.69 0-1.25.56-1.25 1.25v8.5H2v-8.5Z" fill="currentColor"/></svg>
+                </button>
+
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <input type="text" id="contactWebsite" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <input type="hidden" id="formOpenedAt" name="formOpenedAt" value="" />
+              <div class="field-row">
+                <label>
+                  <span>Name</span>
+                  <input type="text" id="contactName" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Type of inquiry</span>
+                <select id="contactType" name="type">
+                  <option value="Business">Business</option>
+                  <option value="Partnership">Partnership</option>
+                  <option value="Hiring">Hiring</option>
+                  <option value="General">General</option>
+                </select>
+              </label>
+
+
+              <label class="company-field" id="companyField" hidden>
+                <span>Company / Organization</span>
+                <input type="text" id="contactCompany" name="company" placeholder="Your company or organization" maxlength="120" />
+              </label>
+              <label>
+                <span>Subject</span>
+                <input type="text" id="contactSubject" name="subject" maxlength="160" placeholder="Project Inquiry - Full-Cycle Game Development" autocomplete="off" />
+              </label>
+
+              <div class="hiring-fields" id="hiringFields" hidden>
+                <div class="hiring-group-label">Location and role</div>
+                <div class="field-row">
+                  <label>
+                    <span>Country / Region</span>
+                    <input type="text" id="hiringCountry" name="country" placeholder="Brazil" data-hiring-required />
+                  </label>
+                  <label>
+                    <span>Time Zone</span>
+                    <input type="text" id="hiringTimeZone" name="timeZone" list="timeZoneOptions" placeholder="America/Sao_Paulo" autocomplete="off" />
+                    <datalist id="timeZoneOptions"></datalist>
+                    <small class="field-helper">Detected from your device. You can change it.</small>
+                  </label>
+                </div>
+
+                <div class="field-row">
+                  <label>
+                    <span>Role Category</span>
+                    <select id="hiringRoleCategory" name="roleCategory" data-hiring-required>
+                      <option value="">Select a category</option>
+                      <option value="Programming">Programming</option>
+                      <option value="3D Art">3D Art</option>
+                      <option value="2D / Concept Art">2D / Concept Art</option>
+                      <option value="Animation / Rigging">Animation / Rigging</option>
+                      <option value="Technical Art / VFX">Technical Art / VFX</option>
+                      <option value="UI / UX">UI / UX</option>
+                      <option value="Game Design">Game Design</option>
+                      <option value="Audio">Audio</option>
+                      <option value="Production / QA">Production / QA</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Role Title</span>
+                    <input type="text" id="hiringRoleTitle" name="roleTitle" placeholder="3D Environment Artist" data-hiring-required />
+                  </label>
+                </div>
+
+                <label>
+                  <span>Seniority</span>
+                  <select id="hiringSeniority" name="seniority" data-hiring-required>
+                    <option value="">Select seniority</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-level">Mid-level</option>
+                    <option value="Senior">Senior</option>
+                    <option value="Lead">Lead</option>
+                    <option value="Specialist">Specialist</option>
+                  </select>
+                </label>
+
+                <div class="hiring-group-label">Availability and rate</div>
+                <label>
+                  <span>Availability</span>
+                  <select id="hiringAvailability" name="availability">
+                    <option value="">To be selected</option>
+                    <option value="Immediately">Immediately</option>
+                    <option value="Within 2 weeks">Within 2 weeks</option>
+                    <option value="Within 1 month">Within 1 month</option>
+                    <option value="More than 1 month">More than 1 month</option>
+                    <option value="To be discussed">To be discussed</option>
+                  </select>
+                </label>
+
+                <div class="field-row">
+                  <label>
+                    <span>Currency</span>
+                    <select id="hiringCurrency" name="currency" data-hiring-required>
+                      <option value="">Select currency</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="BRL">BRL</option>
+                      <option value="GBP">GBP</option>
+                      <option value="CAD">CAD</option>
+                      <option value="AUD">AUD</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Hourly Rate</span>
+                    <input type="number" id="hiringHourlyRate" name="hourlyRate" min="1" step="1" inputmode="decimal" placeholder="25" data-hiring-required />
+                    <small class="field-helper">Your expected freelance rate per hour.</small>
+                  </label>
+                </div>
+
+                <div class="hiring-group-label">Professional links</div>
+                <label>
+                  <span>Portfolio URL</span>
+                  <input type="url" id="hiringPortfolioUrl" name="portfolioUrl" placeholder="https://www.artstation.com/yourprofile" data-hiring-required />
+                </label>
+
+                <div class="field-row">
+                  <label>
+                    <span>LinkedIn URL</span>
+                    <input type="url" id="hiringLinkedinUrl" name="linkedinUrl" placeholder="https://www.linkedin.com/in/yourprofile" />
+                  </label>
+                  <label>
+                    <span>Resume / CV URL</span>
+                    <input type="url" id="hiringResumeUrl" name="resumeUrl" placeholder="https://..." />
+                  </label>
+                </div>
+
+                <label class="consent-field">
+                  <input type="checkbox" id="hiringConsent" name="consent" value="yes" />
+                  <span>I agree that Leaf &amp; Light Studio may store and review the information submitted for hiring purposes.</span>
+                </label>
+              </div>
+              <label>
+                <span>Message</span>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us a bit about your project or message."></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn primary submit-btn" type="submit" disabled aria-disabled="true">
+                  <span>Send message</span>
+                  <span class="plane-mini" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M22 2 11 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m22 2-7 20-4-9-9-4 20-7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+                <div class="form-note" id="formNote" role="status" aria-live="polite">Messages can be sent directly to the studio inbox after the email integration is activated.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="back-to-top-row">
+      <a class="back-to-top-btn" href="#top" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↑</span></a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div class="footer-mini">
+        <img src="assets/images/leaf_and_light_logo.png" alt="Leaf & Light logo" />
+        <div>© 2026 Leaf & Light Studio</div>
+      </div>
+      <div class="social-row">
+        <a class="social-link linkedin-link" href="https://www.linkedin.com/company/leaf-light-studio/" target="_blank" rel="noreferrer" aria-label="Open Leaf & Light Studio on LinkedIn" title="Leaf & Light Studio on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.98H3.68V20h3.26V8.98ZM5.31 7.49a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8ZM20.32 20h-3.25v-5.36c0-1.28-.02-2.92-1.78-2.92-1.78 0-2.05 1.39-2.05 2.83V20H9.98V8.98h3.13v1.51h.04c.44-.83 1.5-1.7 3.09-1.7 3.3 0 3.91 2.17 3.91 5V20h.17Z" fill="currentColor"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social-link meta-link" href="https://www.meta.com/experiences/profile/25575568562123762/" target="_blank" rel="noreferrer" aria-label="Open Leaf & Light Studio on Meta" title="Leaf & Light Studio on Meta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c2.2-4.3 4.8-6.5 7.5-6.5 1.7 0 3 1.1 4.2 3.1 1.1 1.8 2 3 3.3 3 1.1 0 1.8-.8 2.5-1.8v3.1c-.8.9-1.6 1.6-2.8 1.6-2 0-3.1-1.6-4.2-3.4-1-1.7-1.7-2.7-2.9-2.7-1.6 0-3.5 1.8-5.3 5.3-.7 1.4-1.5 2.4-2.9 2.4-1.7 0-2.7-1.6-2.7-4.1 0-2.6 1.1-4 3.3-4 1.6 0 2.7 1 4 3.1l.4.6-.9 1.3-.6-1C6.4 10.2 5.5 9.5 4.6 9.5c-.8 0-1.3.9-1.3 2.5 0 1.3.4 2.1 1.1 2.1.6 0 .9-.5 1.1-1.1z" fill="currentColor"/></svg>
+          <span>Meta</span>
+        </a>
+      </div>
+      <div class="footer-links">Projects · Services · Crew · Portfolio · Contact</div>
+    </div>
+  </footer>
+
+  <script>
+    const assetVersion = Date.now();
+    const heroConfigScript = document.createElement('script');
+    heroConfigScript.src = `assets/js/hero-images.js?v=${assetVersion}`;
+    heroConfigScript.onload = () => {
+      const mainScript = document.createElement('script');
+      mainScript.src = `assets/js/main.js?v=${assetVersion}`;
+      mainScript.onload = () => {
+        const contactScript = document.createElement('script');
+        contactScript.src = `assets/js/contact-pipeline.js?v=${assetVersion}`;
+        document.body.appendChild(contactScript);
+      };
+      document.body.appendChild(mainScript);
+    };
+    document.body.appendChild(heroConfigScript);
+  </script>
 </body>
 </html>

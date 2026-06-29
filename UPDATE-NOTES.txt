@@ -1,0 +1,32 @@
+LEAF & LIGHT STUDIO — YOUTUBE + LEADERSHIP UPDATE
+
+YouTube trailers
+----------------
+The three project cards now contain real embedded YouTube players. Visitors can click Play and watch directly inside the site.
+
+Car Crash Arena: https://youtu.be/zTKtXHv1lbI
+I'm Prisoner: https://youtu.be/jClY-se4Meo
+Infinity Climb: https://youtu.be/mJ9uwHqM4RM
+
+Each project also includes an Open on YouTube fallback link.
+
+Leadership
+----------
+A new Leadership section was added for Eduardo Jaeger:
+Founder & CEO
+LinkedIn: https://www.linkedin.com/in/eduardo-jaeger-3a2549112/
+
+The HTML includes a commented partner-card template inside the leadership section. Duplicate it later to add a co-founder, executive partner or specialist lead. The grid automatically adapts to more profiles.
+
+Contact
+-------
+The contact email was updated to:
+leafandlightcontac@gmail.com
+
+Upload
+------
+Copy index.html and the assets folder into D:\_SiteOficial, replacing the existing files. Then run:
+
+git add .
+git commit -m "Add embedded trailers and leadership section"
+git push origin main

@@ -1,0 +1,13 @@
+Leaf & Light Studio — YouTube trailer integration
+
+Configured videos:
+- Car Crash Arena: https://youtu.be/zTKtXHv1lbI
+- I'm Prisoner: https://youtu.be/jClY-se4Meo
+- Infinity Climb: https://youtu.be/mJ9uwHqM4RM
+
+The preview thumbnails are loaded from YouTube, and the privacy-enhanced YouTube player
+is created only after the visitor clicks a preview. Closing the modal removes the iframe,
+which immediately stops video and audio.
+
+To publish, replace your existing index.html, assets/css/styles.css and assets/js/main.js.
+The old assets/videos folder can be deleted.

@@ -1,0 +1,26 @@
+COMO ESCOLHER AS IMAGENS DO TOPO
+
+1. Coloque as imagens nesta pasta:
+   assets/images/hero
+
+2. Abra:
+   assets/js/hero-images.js
+
+3. Adicione, remova ou mude a ordem dos blocos da lista.
+
+Exemplo:
+
+{
+  src: 'assets/images/hero/minha-imagem.jpg',
+  alt: 'Descricao curta da imagem',
+  position: 'center'
+}
+
+O campo position controla o enquadramento. Exemplos:
+- center
+- center top
+- center bottom
+- 40% center
+
+Use imagens JPG, PNG ou WEBP, preferencialmente em 1920x1080.
+Depois, abra o site local para testar e faca o commit/push normalmente.

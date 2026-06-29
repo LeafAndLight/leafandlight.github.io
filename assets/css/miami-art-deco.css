@@ -1,0 +1,778 @@
+/* Miami Art Deco experimental skin.
+   Loaded after the VR/AI theme so the 01 / Projects structure stays intact. */
+.vr-ai-theme.miami-deco-theme{
+  --miami-ink:#07111d;
+  --miami-night:#12091f;
+  --miami-deep:#061b2d;
+  --miami-cream:#fff4d8;
+  --miami-pink:#ff5cc8;
+  --miami-coral:#ff7b57;
+  --miami-teal:#31e7d8;
+  --miami-blue:#43b7ff;
+  --miami-gold:#ffc95a;
+  --miami-mint:#96ffcf;
+  --tech-cyan:var(--miami-teal);
+  --tech-blue:var(--miami-blue);
+  --tech-violet:var(--miami-pink);
+  --tech-mint:var(--miami-mint);
+  --tech-amber:var(--miami-gold);
+  background:
+    radial-gradient(circle at 12% 4%,rgba(255,92,200,.26),transparent 22rem),
+    radial-gradient(circle at 82% 10%,rgba(49,231,216,.24),transparent 26rem),
+    radial-gradient(circle at 50% 100%,rgba(255,123,87,.18),transparent 36rem),
+    linear-gradient(180deg,#07111d 0%,#100920 48%,#061625 100%);
+  color:#fffaf0;
+}
+
+.vr-ai-theme.miami-deco-theme:before{
+  background:
+    linear-gradient(rgba(49,231,216,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,201,90,.052) 1px,transparent 1px),
+    repeating-linear-gradient(135deg,rgba(255,92,200,.04) 0 1px,transparent 1px 42px);
+  background-size:52px 52px,52px 52px,auto;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,.5) 58%,rgba(0,0,0,.18));
+}
+
+.vr-ai-theme.miami-deco-theme:after{
+  background:
+    radial-gradient(ellipse at 50% 16%,rgba(255,201,90,.12),transparent 18rem),
+    repeating-linear-gradient(180deg,rgba(255,255,255,.018) 0 1px,transparent 1px 6px),
+    radial-gradient(circle at center,transparent 0%,rgba(0,0,0,.32) 100%);
+  opacity:.72;
+}
+
+.miami-deco-theme .header{
+  background:rgba(8,8,22,.78);
+  border-bottom:3px double rgba(255,201,90,.48);
+  box-shadow:0 8px 34px rgba(255,92,200,.08),0 0 0 1px rgba(49,231,216,.08);
+}
+
+.miami-deco-theme .brand{
+  border-radius:0 18px 0 18px;
+  border-color:rgba(255,201,90,.42);
+  background:linear-gradient(135deg,rgba(255,244,216,.08),rgba(255,92,200,.08));
+  box-shadow:inset 0 0 0 1px rgba(49,231,216,.14),0 0 24px rgba(255,92,200,.08);
+}
+
+.miami-deco-theme .brand:hover,
+.miami-deco-theme .brand:focus-visible{
+  color:var(--miami-cream);
+  background:linear-gradient(135deg,rgba(49,231,216,.16),rgba(255,92,200,.14));
+}
+
+.miami-deco-theme .brand-name,
+.miami-deco-theme .menu a{
+  text-transform:uppercase;
+  letter-spacing:.055em;
+}
+
+.miami-deco-theme .menu a{
+  color:#f9e8d2;
+  border:1px solid transparent;
+}
+
+.miami-deco-theme .menu a:hover,
+.miami-deco-theme .menu a.is-active{
+  color:#08111d;
+  background:linear-gradient(135deg,var(--miami-gold),var(--miami-coral));
+  border-color:rgba(255,244,216,.4);
+}
+
+.miami-deco-theme .menu .cta{
+  border-color:rgba(49,231,216,.5);
+  background:linear-gradient(135deg,rgba(49,231,216,.15),rgba(255,92,200,.14));
+  color:#fff4d8;
+}
+
+.miami-deco-theme .eyebrow,
+.miami-deco-theme .label,
+.miami-deco-theme .section-index{
+  border-radius:0 16px 0 16px;
+  border-color:rgba(49,231,216,.46);
+  background:linear-gradient(135deg,rgba(49,231,216,.14),rgba(255,92,200,.12));
+  color:#fff4d8;
+  box-shadow:5px 5px 0 rgba(255,92,200,.8),0 0 22px rgba(49,231,216,.12);
+}
+
+.miami-deco-theme .eyebrow:before,
+.miami-deco-theme .section-index:before{
+  background:var(--miami-gold);
+  box-shadow:0 0 14px var(--miami-gold);
+}
+
+.miami-deco-theme .hero:before{
+  background:
+    linear-gradient(90deg,rgba(7,17,29,.96) 0%,rgba(18,9,31,.76) 46%,rgba(6,22,37,.44) 100%),
+    radial-gradient(circle at 26% 28%,rgba(255,92,200,.18),transparent 24rem),
+    radial-gradient(circle at 82% 40%,rgba(49,231,216,.16),transparent 26rem);
+}
+
+.miami-deco-theme .hero:after{
+  background:
+    linear-gradient(180deg,rgba(7,17,29,.32),rgba(18,9,31,.92)),
+    repeating-conic-gradient(from 210deg at 18% 18%,rgba(255,201,90,.09) 0 6deg,transparent 6deg 13deg);
+  opacity:.95;
+}
+
+.miami-deco-theme .hero-copy,
+.miami-deco-theme .side-card,
+.miami-deco-theme .service-card,
+.miami-deco-theme .process-wrap,
+.miami-deco-theme .approach,
+.miami-deco-theme .portfolio-shell,
+.miami-deco-theme .leadership-grid,
+.miami-deco-theme .contact-card{
+  border-radius:0 34px 0 34px;
+  border-color:rgba(255,201,90,.3);
+  background:
+    linear-gradient(135deg,rgba(9,21,36,.86),rgba(23,10,35,.82)),
+    radial-gradient(circle at top right,rgba(255,92,200,.14),transparent 18rem),
+    radial-gradient(circle at bottom left,rgba(49,231,216,.12),transparent 16rem);
+  box-shadow:10px 10px 0 rgba(255,92,200,.13),0 28px 90px rgba(0,0,0,.34),inset 0 0 44px rgba(255,201,90,.035);
+}
+
+.miami-deco-theme .hero-copy:before,
+.miami-deco-theme .side-card:before{
+  background:
+    linear-gradient(90deg,var(--miami-gold),transparent 34%) left top/100% 2px no-repeat,
+    linear-gradient(180deg,var(--miami-teal),transparent 38%) left top/2px 100% no-repeat,
+    linear-gradient(90deg,transparent,var(--miami-pink)) right bottom/58% 2px no-repeat;
+}
+
+.miami-deco-theme .hero-copy h1,
+.miami-deco-theme .contact-copy-block h2{
+  background:linear-gradient(180deg,#fff8e7 0%,#ffe39a 46%,#ff77d8 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  text-shadow:0 0 26px rgba(255,92,200,.13);
+}
+
+.miami-deco-theme .hero-copy p,
+.miami-deco-theme .section-head p,
+.miami-deco-theme .side-card p,
+.miami-deco-theme .service-card p,
+.miami-deco-theme .flow-step p,
+.miami-deco-theme .contact-copy-block p{
+  color:#d9c9d9;
+}
+
+.miami-deco-theme .hero-pills span,
+.miami-deco-theme .approach-pills span{
+  border-radius:0 12px 0 12px;
+  border-color:rgba(255,201,90,.28);
+  background:linear-gradient(135deg,rgba(255,201,90,.1),rgba(49,231,216,.08));
+  color:#fff4d8;
+}
+
+.miami-deco-theme .hero-pills span:before{
+  background:var(--miami-pink);
+  box-shadow:0 0 15px var(--miami-pink);
+}
+
+.miami-deco-theme .btn,
+.miami-deco-theme .hero-buttons .btn,
+.miami-deco-theme .store-link,
+.miami-deco-theme .social-link{
+  border-radius:0 16px 0 16px;
+  border-color:rgba(255,201,90,.42);
+  background:linear-gradient(135deg,rgba(255,201,90,.17),rgba(255,92,200,.12));
+  color:#fff4d8;
+  box-shadow:5px 5px 0 rgba(49,231,216,.12),0 14px 34px rgba(0,0,0,.2);
+}
+
+.miami-deco-theme .btn:hover,
+.miami-deco-theme .hero-buttons .btn:hover,
+.miami-deco-theme .store-link:hover,
+.miami-deco-theme .social-link:hover{
+  color:#09111d;
+  border-color:#fff4d8;
+  background:linear-gradient(135deg,var(--miami-gold),var(--miami-coral) 55%,var(--miami-pink));
+  box-shadow:6px 6px 0 rgba(49,231,216,.4),0 16px 42px rgba(255,92,200,.24);
+}
+
+.miami-deco-theme .section-head{
+  border-bottom:1px solid rgba(255,201,90,.24);
+}
+
+.miami-deco-theme .section-head h2{
+  color:#fff8e7;
+  text-shadow:0 0 24px rgba(255,201,90,.08);
+}
+
+/* Keep the loved 01 / Projects composition, only giving it Miami Deco color and ornament. */
+.miami-deco-theme .project-grid{
+  grid-template-columns:1fr;
+}
+
+.miami-deco-theme .project-card{
+  border-radius:0 34px 0 34px;
+  border-color:rgba(255,201,90,.22);
+  background:
+    linear-gradient(135deg,rgba(7,17,29,.9),rgba(15,8,25,.92)),
+    radial-gradient(circle at 90% 0,color-mix(in srgb,var(--accent) 18%,transparent),transparent 18rem);
+  box-shadow:12px 12px 0 rgba(49,231,216,.06),0 26px 80px rgba(0,0,0,.35);
+}
+
+.miami-deco-theme .project-card:hover{
+  border-color:color-mix(in srgb,var(--accent) 58%,var(--miami-gold));
+  box-shadow:12px 12px 0 rgba(255,92,200,.12),0 30px 88px rgba(0,0,0,.4);
+}
+
+.miami-deco-theme .project-card:nth-child(1){--accent:var(--miami-gold)}
+.miami-deco-theme .project-card:nth-child(2){--accent:var(--miami-teal)}
+.miami-deco-theme .project-card:nth-child(3){--accent:#a8ff6d}
+
+.miami-deco-theme .project-media{
+  border-radius:0;
+}
+
+.miami-deco-theme .project-kicker{
+  color:var(--accent);
+  text-shadow:0 0 16px color-mix(in srgb,var(--accent) 45%,transparent);
+}
+
+.miami-deco-theme .project-mark,
+.miami-deco-theme .project-video{
+  border-radius:0 18px 0 18px;
+  border-color:rgba(255,244,216,.12);
+}
+
+.miami-deco-theme .tag{
+  border-radius:0;
+  border:0;
+  background:transparent;
+  color:color-mix(in srgb,var(--accent) 82%,#fff4d8);
+  padding:0;
+  letter-spacing:.12em;
+}
+
+.miami-deco-theme .tag:before{
+  content:"•";
+  margin-right:8px;
+  color:var(--miami-gold);
+}
+
+.miami-deco-theme .project-dot{
+  border-color:color-mix(in srgb,var(--accent) 68%,#fff4d8);
+  background:rgba(7,17,29,.62);
+  box-shadow:0 0 26px color-mix(in srgb,var(--accent) 34%,transparent),4px 4px 0 rgba(255,92,200,.18);
+}
+
+.miami-deco-theme .service-card,
+.miami-deco-theme .flow-step{
+  border-radius:0 28px 0 28px;
+}
+
+.miami-deco-theme .service-number,
+.miami-deco-theme .flow-step span{
+  color:#fff4d8;
+}
+
+.miami-deco-theme .service-icon,
+.miami-deco-theme .flow-step span{
+  border-radius:0 14px 0 14px;
+  border-color:rgba(255,201,90,.32);
+  background:linear-gradient(135deg,rgba(255,201,90,.12),rgba(49,231,216,.1));
+}
+
+.miami-deco-theme .flow-step:not(:last-child):after{
+  background:linear-gradient(90deg,var(--miami-gold),var(--miami-pink),transparent);
+  box-shadow:0 0 16px rgba(255,92,200,.28);
+}
+
+.miami-deco-theme .orbit-node,
+.miami-deco-theme .approach-pills span,
+.miami-deco-theme .leader-tags span,
+.miami-deco-theme .skill-list span{
+  color:#9ffbf2;
+}
+
+.miami-deco-theme .core-node{
+  background:radial-gradient(circle at 35% 25%,#fff8e7,#ffe39a 55%,#ff7fd8 100%);
+  box-shadow:0 0 46px rgba(255,92,200,.34),0 20px 60px rgba(0,0,0,.44);
+}
+
+.miami-deco-theme .portfolio-chapter{
+  border-radius:0 20px 0 20px;
+  border-color:rgba(255,201,90,.25);
+  background:linear-gradient(135deg,rgba(255,201,90,.08),rgba(49,231,216,.06));
+}
+
+.miami-deco-theme .shot.cinema-shot,
+.miami-deco-theme .shot.cinema-feature,
+.miami-deco-theme .crew-work-item,
+.miami-deco-theme .contact-form,
+.miami-deco-theme .contact-form input,
+.miami-deco-theme .contact-form textarea,
+.miami-deco-theme .contact-form select,
+.miami-deco-theme .contact-email,
+.miami-deco-theme .copy-icon-btn{
+  border-radius:0 18px 0 18px;
+}
+
+.miami-deco-theme .shot figcaption span,
+.miami-deco-theme .leader-tags span:before,
+.miami-deco-theme .skill-list span:before{
+  color:var(--miami-gold);
+}
+
+.miami-deco-theme .leader-actions .btn{
+  border-color:rgba(49,231,216,.36);
+}
+
+.miami-deco-theme .contact-form{
+  background:rgba(7,17,29,.72);
+  border-color:rgba(255,201,90,.26);
+}
+
+.miami-deco-theme .contact-form label{
+  color:#fff4d8;
+}
+
+.miami-deco-theme .contact-form input,
+.miami-deco-theme .contact-form textarea,
+.miami-deco-theme .contact-form select{
+  border-color:rgba(255,201,90,.22);
+  background:rgba(5,10,18,.62);
+  color:#fff8e7;
+}
+
+.miami-deco-theme .submit-btn.is-ready,
+.miami-deco-theme .copy-icon-btn.copied{
+  background:linear-gradient(135deg,var(--miami-teal),var(--miami-blue));
+  border-color:var(--miami-teal);
+  color:#06111d;
+}
+
+.miami-deco-theme .back-to-top-btn{
+  border-radius:0 14px 0 14px;
+  border-color:rgba(255,201,90,.35);
+  color:#fff4d8;
+}
+
+@media (max-width:1100px){
+  .miami-deco-theme .project-media{border-radius:0 34px 0 0}
+}
+
+@media (max-width:780px){
+  .miami-deco-theme .hero-copy,
+  .miami-deco-theme .side-card,
+  .miami-deco-theme .project-card,
+  .miami-deco-theme .contact-card{
+    border-radius:0 26px 0 26px;
+    box-shadow:6px 6px 0 rgba(255,92,200,.1),0 20px 60px rgba(0,0,0,.32);
+  }
+
+  .miami-deco-theme .hero-copy h1{
+    font-size:41px;
+  }
+}
+/* Miami refinement: internal project/portfolio content and hero dots */
+.miami-deco-theme .hero:after{
+  background:
+    linear-gradient(180deg,rgba(7,17,29,.28),rgba(18,9,31,.9)),
+    linear-gradient(115deg,rgba(255,201,90,.06),transparent 32%,rgba(49,231,216,.04) 58%,transparent 78%);
+  opacity:.95;
+}
+
+.miami-deco-theme .slide-dots button,
+.miami-deco-theme .hero-side .slide-dots button,
+.miami-deco-theme .hero-side .slide-dots button:nth-child(1),
+.miami-deco-theme .hero-side .slide-dots button:nth-child(2),
+.miami-deco-theme .hero-side .slide-dots button:nth-child(3){
+  width:10px;
+  height:10px;
+  background:rgba(216,220,222,.34);
+  border:1px solid rgba(255,244,216,.18);
+  box-shadow:none;
+  opacity:.68;
+}
+
+.miami-deco-theme .hero-side .slide-dots button.active{
+  opacity:1;
+  transform:scale(1.22);
+}
+
+.miami-deco-theme .hero-side .slide-dots button:nth-child(1).active{
+  background:var(--miami-gold);
+  border-color:rgba(255,244,216,.5);
+  box-shadow:0 0 14px rgba(255,201,90,.72),0 0 0 4px rgba(255,201,90,.08);
+}
+
+.miami-deco-theme .hero-side .slide-dots button:nth-child(2).active{
+  background:var(--miami-teal);
+  border-color:rgba(255,244,216,.45);
+  box-shadow:0 0 14px rgba(49,231,216,.72),0 0 0 4px rgba(49,231,216,.08);
+}
+
+.miami-deco-theme .hero-side .slide-dots button:nth-child(3).active{
+  background:#a8ff6d;
+  border-color:rgba(255,244,216,.45);
+  box-shadow:0 0 14px rgba(168,255,109,.72),0 0 0 4px rgba(168,255,109,.08);
+}
+
+.miami-deco-theme #projects .section-head{
+  position:relative;
+}
+
+.miami-deco-theme #projects .section-head:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-1px;
+  height:3px;
+  background:linear-gradient(90deg,var(--miami-gold),var(--miami-pink) 18%,transparent 34%,transparent 66%,var(--miami-teal));
+  opacity:.8;
+}
+
+.miami-deco-theme .project-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.miami-deco-theme .project-card:before{
+  content:"";
+  position:absolute;
+  inset:18px;
+  pointer-events:none;
+  border:1px solid rgba(255,201,90,.14);
+  clip-path:polygon(0 0,86px 0,86px 1px,calc(100% - 86px) 1px,calc(100% - 86px) 0,100% 0,100% 100%,calc(100% - 86px) 100%,calc(100% - 86px) calc(100% - 1px),86px calc(100% - 1px),86px 100%,0 100%);
+  z-index:2;
+}
+
+.miami-deco-theme .project-media{
+  clip-path:polygon(0 0,calc(100% - 34px) 0,100% 34px,100% calc(100% - 34px),calc(100% - 34px) 100%,0 100%);
+  background:#060b14;
+  border-right:1px solid rgba(255,201,90,.3);
+}
+
+.miami-deco-theme .project-media img{
+  filter:saturate(1.03) contrast(1.03) sepia(.08);
+}
+
+.miami-deco-theme .project-media:after{
+  background:
+    linear-gradient(90deg,rgba(7,17,29,.02) 0%,rgba(7,17,29,.22) 58%,rgba(18,9,31,.72) 100%),
+    linear-gradient(180deg,rgba(255,201,90,.12),transparent 28%,transparent 70%,rgba(255,92,200,.08));
+}
+
+.miami-deco-theme .project-theme{
+  top:22px;
+  left:22px;
+}
+
+.miami-deco-theme .project-dot{
+  border-radius:0 14px 0 14px;
+  width:44px;
+  height:44px;
+  padding:6px;
+}
+
+.miami-deco-theme .project-dot img{
+  border-radius:0 10px 0 10px;
+}
+
+.miami-deco-theme .project-body{
+  position:relative;
+  padding:40px 42px 34px 30px;
+}
+
+.miami-deco-theme .project-body:before{
+  content:"";
+  position:absolute;
+  top:34px;
+  bottom:34px;
+  left:12px;
+  width:3px;
+  background:linear-gradient(180deg,var(--accent),transparent 46%,var(--miami-pink));
+  opacity:.9;
+}
+
+.miami-deco-theme .project-title{
+  display:block;
+}
+
+.miami-deco-theme .project-title h3{
+  color:#fff8e7;
+  letter-spacing:-.045em;
+  text-shadow:0 0 18px color-mix(in srgb,var(--accent) 18%,transparent);
+}
+
+.miami-deco-theme .project-kicker{
+  display:inline-flex;
+  width:max-content;
+  margin-top:8px;
+  padding:6px 9px;
+  border:1px solid color-mix(in srgb,var(--accent) 48%,rgba(255,244,216,.16));
+  border-radius:0 10px 0 10px;
+  background:color-mix(in srgb,var(--accent) 12%,rgba(7,17,29,.72));
+  font-size:10px;
+  line-height:1;
+}
+
+.miami-deco-theme .project-mark{
+  height:76px;
+  margin-top:10px;
+  border:1px solid rgba(255,201,90,.22);
+  border-left:4px solid var(--accent);
+  background:#060b14;
+  box-shadow:4px 4px 0 rgba(255,92,200,.12),0 12px 28px rgba(0,0,0,.24);
+}
+
+.miami-deco-theme .project-body p{
+  color:#e5d8dc;
+  font-size:15px;
+  line-height:1.68;
+}
+
+.miami-deco-theme .tag-row{
+  gap:12px 14px;
+  padding:15px 0 4px;
+  border-top:1px solid rgba(255,201,90,.14);
+  border-bottom:1px solid rgba(49,231,216,.1);
+}
+
+.miami-deco-theme .tag{
+  font-size:11px;
+  color:color-mix(in srgb,var(--accent) 76%,#fff4d8);
+  text-shadow:0 0 12px color-mix(in srgb,var(--accent) 16%,transparent);
+}
+
+.miami-deco-theme .store-cta-row{
+  justify-content:flex-start;
+}
+
+.miami-deco-theme .project-video{
+  border:1px solid rgba(255,201,90,.22);
+  box-shadow:5px 5px 0 rgba(49,231,216,.08),0 18px 42px rgba(0,0,0,.32);
+}
+
+.miami-deco-theme .video-bar{
+  height:4px;
+  background:linear-gradient(90deg,var(--accent),var(--miami-pink),var(--miami-teal))!important;
+}
+
+.miami-deco-theme #portfolio .section-head:after{
+  content:"";
+  display:block;
+  height:3px;
+  width:100%;
+  margin-top:22px;
+  background:linear-gradient(90deg,var(--miami-pink),var(--miami-gold) 24%,transparent 45%,var(--miami-teal));
+}
+
+.miami-deco-theme .portfolio-grid.cinematic-grid{
+  gap:22px;
+}
+
+.miami-deco-theme .portfolio-chapter{
+  padding:18px 20px;
+  border-left:4px solid var(--miami-gold);
+  border-bottom:3px solid rgba(255,92,200,.65);
+  box-shadow:4px 4px 0 rgba(49,231,216,.08);
+}
+
+.miami-deco-theme .portfolio-chapter span{
+  color:#9ffbf2;
+  letter-spacing:.18em;
+}
+
+.miami-deco-theme .portfolio-chapter strong{
+  color:#fff4d8;
+  letter-spacing:-.035em;
+  text-shadow:0 0 16px rgba(255,201,90,.12);
+}
+
+.miami-deco-theme .shot.cinema-shot,
+.miami-deco-theme .shot.cinema-feature{
+  border-radius:0 26px 0 26px;
+  outline:1px solid rgba(255,201,90,.2);
+  outline-offset:-1px;
+  background:#07111d;
+  box-shadow:6px 6px 0 rgba(255,92,200,.08),0 20px 56px rgba(0,0,0,.34);
+}
+
+.miami-deco-theme .shot.cinema-shot:before,
+.miami-deco-theme .shot.cinema-feature:before{
+  content:"";
+  position:absolute;
+  inset:10px;
+  z-index:2;
+  pointer-events:none;
+  border:1px solid rgba(255,244,216,.14);
+  border-radius:0 18px 0 18px;
+}
+
+.miami-deco-theme .shot img{
+  filter:saturate(1.04) contrast(1.04) sepia(.05);
+}
+
+.miami-deco-theme .shot:after{
+  background:linear-gradient(180deg,transparent 42%,rgba(7,17,29,.2) 58%,rgba(12,7,21,.92));
+}
+
+.miami-deco-theme .shot:hover{
+  outline-color:rgba(49,231,216,.44);
+  box-shadow:7px 7px 0 rgba(255,201,90,.16),0 26px 72px rgba(0,0,0,.42);
+}
+
+.miami-deco-theme .shot figcaption{
+  left:22px;
+  right:22px;
+  bottom:20px;
+  padding-top:12px;
+  border-top:1px solid rgba(255,201,90,.2);
+}
+
+.miami-deco-theme .shot figcaption span{
+  display:inline-flex;
+  padding:5px 8px;
+  border:1px solid rgba(255,201,90,.22);
+  border-radius:0 9px 0 9px;
+  background:rgba(7,17,29,.62);
+  color:color-mix(in srgb,var(--miami-gold) 82%,#fff);
+  letter-spacing:.16em;
+}
+
+.miami-deco-theme .shot figcaption strong{
+  color:#fff8e7;
+  text-shadow:0 2px 18px rgba(0,0,0,.55);
+}
+
+.miami-deco-theme .portfolio-open:after{
+  border-radius:0 12px 0 12px;
+  background:linear-gradient(135deg,rgba(255,201,90,.94),rgba(255,92,200,.9));
+  color:#07111d;
+  border-color:rgba(255,244,216,.42);
+}
+
+@media (max-width:1100px){
+  .miami-deco-theme .project-media{
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%);
+    border-right:0;
+    border-bottom:1px solid rgba(255,201,90,.24);
+  }
+
+  .miami-deco-theme .project-body{
+    padding:34px 28px 30px;
+  }
+
+  .miami-deco-theme .project-body:before{
+    left:0;
+    top:24px;
+    bottom:24px;
+  }
+}
+
+@media (max-width:780px){
+  .miami-deco-theme .project-body{
+    padding:28px 22px 24px;
+  }
+
+  .miami-deco-theme .project-body:before{
+    display:none;
+  }
+
+  .miami-deco-theme .store-cta-row{
+    justify-content:center;
+  }
+
+  .miami-deco-theme .portfolio-chapter{
+    padding:14px 16px;
+  }
+}
+
+/* Theme switcher and detached cover loop in Miami skin */
+.miami-deco-theme .theme-switcher{
+  border-radius:0 14px 0 14px;
+  border-color:rgba(255,201,90,.32);
+  background:linear-gradient(135deg,rgba(255,201,90,.08),rgba(255,92,200,.08));
+  box-shadow:4px 4px 0 rgba(49,231,216,.08),0 12px 28px rgba(0,0,0,.16);
+}
+
+.miami-deco-theme .theme-dot{
+  border-radius:0 6px 0 6px;
+}
+
+.miami-deco-theme .theme-dot.is-active{
+  box-shadow:0 0 0 4px rgba(255,201,90,.1),0 0 18px currentColor,3px 3px 0 rgba(255,92,200,.35);
+}
+
+.miami-deco-theme .hero-copy{
+  overflow:visible;
+}
+
+.miami-deco-theme .hero-copy h1{
+  line-height:.98;
+  margin-bottom:26px;
+  padding-bottom:.08em;
+}
+
+.miami-deco-theme .hero-copy p{
+  position:relative;
+  z-index:2;
+}
+
+.miami-deco-theme .hero-cover-control{
+  width:max-content;
+  border-radius:0 18px 0 18px;
+  border-color:rgba(255,201,90,.34);
+  background:linear-gradient(135deg,rgba(7,17,29,.82),rgba(23,10,35,.78));
+  box-shadow:5px 5px 0 rgba(255,92,200,.18),0 16px 38px rgba(0,0,0,.24);
+}
+
+.miami-deco-theme .hero-cover-control span{
+  color:#fff4d8;
+  letter-spacing:.16em;
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots{
+  gap:12px;
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots button,
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(1),
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(2),
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(3){
+  width:13px;
+  height:13px;
+  border-radius:0 6px 0 6px;
+  background:rgba(216,220,222,.32);
+  border:1px solid rgba(255,244,216,.18);
+  box-shadow:none;
+  opacity:.72;
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots button.active{
+  opacity:1;
+  transform:scale(1.16) rotate(45deg);
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(1).active{
+  background:var(--miami-gold);
+  box-shadow:0 0 14px rgba(255,201,90,.74),0 0 0 4px rgba(255,201,90,.08);
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(2).active{
+  background:var(--miami-teal);
+  box-shadow:0 0 14px rgba(49,231,216,.74),0 0 0 4px rgba(49,231,216,.08);
+}
+
+.miami-deco-theme .hero-cover-control .slide-dots button:nth-child(3).active{
+  background:#a8ff6d;
+  box-shadow:0 0 14px rgba(168,255,109,.74),0 0 0 4px rgba(168,255,109,.08);
+}
+
+@media (max-width:780px){
+  .miami-deco-theme .hero-copy h1{
+    line-height:1;
+    padding-bottom:.1em;
+  }
+
+  .miami-deco-theme .hero-cover-control{
+    width:100%;
+    justify-content:center;
+  }
+}

@@ -1,0 +1,12 @@
+*.zip
+*.rar
+*.7z
+*.mp4
+*.mov
+*.webm
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.bak
+assets/videos/
