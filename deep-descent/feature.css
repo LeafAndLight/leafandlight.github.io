@@ -1,0 +1,17 @@
+.descent-feature {
+  display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);
+  position:relative; overflow:hidden; margin:0 0 26px;
+  border:1px solid #a75a46; background:#1b0e0d; color:#ffefdb;
+}
+.descent-feature img { display:block; width:100%; height:100%; object-fit:cover }
+.descent-feature-copy { padding:clamp(20px,4vw,55px); align-self:center }
+.descent-feature .descent-feature-label { color:#ffb68a; font:600 .74rem/1.5 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase }
+.descent-feature .descent-feature-copy h3 { color:#ffefdb; margin:.18em 0; font:900 clamp(2.35rem,6vw,5rem)/.96 system-ui,sans-serif; letter-spacing:-.05em }
+.descent-feature .descent-feature-copy p { color:#f0d4c5; max-width:42ch; margin:12px 0 18px; line-height:1.6 }
+.descent-feature .descent-feature-copy a { display:inline-flex; align-items:center; gap:14px; padding:10px 14px; background:#ffb68a; color:#1b0e0d; font:700 .84rem/1.5 system-ui,sans-serif }
+.descent-feature .descent-feature-copy a:hover { background:#ffdbb9 }
+.descent-feature a:focus-visible { outline:2px solid #ffefdb; outline-offset:4px }
+@media(max-width:660px) {
+  .descent-feature { grid-template-columns:1fr }
+  .descent-feature img { aspect-ratio:16/9; height:auto }
+}
